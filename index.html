@@ -15,10 +15,20 @@
 <link href="${FR_CSS_WEB}/preorder/slick.css" rel="stylesheet"/> -->
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
-<link rel="stylesheet" href="https://static-breeze.nike.co.kr/kr/ko_kr/css/common-2.css?20180808105200" />
 <script type="text/javascript"> 
         //_dl이 선언되지 않아 satellite를 불렁는데 실패하여 정의해주었습니다.
-        var _dl = {};
+        var _dl = {
+			/* Page 공통 영역 */
+			page_name : ["test","test2"], // Array[4] 
+			site_section : "SITE_SECTION", // Site Section (L1)
+			site_app_name : "nikestorekr", // 고정
+			page_division : "Commerce", // 고정
+			country : "COUNTRY", // 2 digit ISO code
+			langauge : "LANGUAGE", // 2 digit ISO code
+			page_type : "PAGE_TYPE", 
+			site_section_l2 : "SITE_SECTION_L2", // site section L2 
+			login_status : "LOGIN_STATUS", // login status 
+		}
 
     </script>
 <script src="https://assets.adobedtm.com/33e935265ccb0d19d288448546d81ff9491b3836/satelliteLib-e3452acbf1bddc301d138b9f9b279553bff7662b-staging.js"></script>
