@@ -6,12 +6,25 @@
 <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
 <title>나이키 줌 스트릭 스펙트럼 플러스</title>
 <link rel="shortcut icon" href="https://static-breeze.nike.co.kr/kr/ko_kr/cmsstatic/theme/52/android-icon-36x36.png" />
-<script type="text/javascript" src="${FR_JS_WEB}/moment.min.js"></script>
+
+<!-- 기존의 jquery의 src 호출에 에러가 있어 데이터가 전송되지 않아 수정하였습니다. -->
+<!-- <script type="text/javascript" src="${FR_JS_WEB}/moment.min.js"></script>
 <script type="text/javascript" src="${FR_JS_WEB}/jquery-1.11.3.min.js"></script>
 <script type="text/javascript" src="${FR_JS_WEB}/slick.js"></script>
 <script type="text/javascript" src="${EDITOR}/comUtil.js"></script>
-<link href="${FR_CSS_WEB}/preorder/slick.css" rel="stylesheet"/>
-<fmt:formatDate value="${now}" pattern="yyyyMMddHH" var="today"/>
+<link href="${FR_CSS_WEB}/preorder/slick.css" rel="stylesheet"/> -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
+<!--[if lt IE 9]>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js" type="text/javascript"></script>
+<![endif]-->
+<script type="text/javascript">
+//<![CDATA[
+window.jQuery || document.write('<script src="/js/lib/jquery-1.8.3.min.js" type="text/javascript"><\/script>');
+//]]>
+</script>
+<link rel="stylesheet" href="https://static-breeze.nike.co.kr/kr/ko_kr/css/common-2.css?20180808105200" />
+
 <style type="text/css">
 @font-face {
 font-family:"NG";
@@ -245,10 +258,14 @@ input:disabled {border:1px solid #d1d1d1; background:#fff;}
 .certify input[type="text"]{color:#999; background:#f2f2f2;}
 /*수정180426*/
 </style>
+<script type="text/javascript"> 
+        //_dl이 선언되지 않아 satellite를 불렁는데 실패하여 정의해주었습니다.
+        var _dl = {};
 
+    </script>
 <script src="https://assets.adobedtm.com/33e935265ccb0d19d288448546d81ff9491b3836/satelliteLib-e3452acbf1bddc301d138b9f9b279553bff7662b-staging.js"></script>
 
-</script>
+
 </head>
 <script>
 
@@ -787,7 +804,7 @@ function sciFrm2(){
 	});
 
 </script>
-
+<script type="text/javascript" src="https://static-breeze.nike.co.kr/kr/ko_kr/js/index-2.js?20180808105200"></script>
 
 <!-- 페이지 E -->
 <script type="text/javascript">_satellite.pageBottom();</script> 
